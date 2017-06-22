@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "next src -p 5000",
     "build": "next build src",
     "start": "next start src -p $PORT",
     "heroku-postbuild": "npm run build"

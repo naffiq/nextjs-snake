@@ -7,7 +7,9 @@ export const initialState = {
     snakeIsChangingDirection : false,
     snakePosition : [[0, 1], [0, 0]],
     applePosition : [10, 10],
-    snakeSize : 2
+    snakeSize : 2,
+    isDead: false,
+    deathPosition: [[-1, -1], [-1, -1]]
 }
 
 export const initField = () => {
