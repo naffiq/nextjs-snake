@@ -51,6 +51,7 @@ class App extends React.Component {
         this.move = this.move.bind(this)
         this.isDead = this.isDead.bind(this)
         this.restart = this.restart.bind(this)
+        this.pause = this.pause.bind(this)
 
         setInterval(this.move, 75)
 
@@ -58,6 +59,15 @@ class App extends React.Component {
 
     componentDidMount(){
         document.addEventListener("keydown", this.handleKeyPress, false);
+        window.addEventListener("blur", this.pause);
+    }
+
+    pause(){
+        this.setState({
+            direction: '',
+            directionCode: 0
+        })
+        console.log(this.state)
     }
 
     handleKeyPress(evt){
