@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "next src",
     "build": "next build src",
-    "serve": "next start src",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "next start src -p $PORT",
+    "heroku-postbuild": "npm run build"
   },
   "author": "",
   "license": "ISC",
