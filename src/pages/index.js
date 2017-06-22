@@ -121,7 +121,7 @@ class App extends React.Component {
 
     render(){
         return (
-            <div style={{ width : '900px', height : '900px', margin : 'auto', position : 'relative' }}>
+            <div style={{ width : '600px', height : '600px', margin : 'auto', position : 'relative' }}>
                 <Field field={initField()} />
                 <Snake position={this.state.snakePosition} size={this.state.snakeSize} />
                 <Apple position={this.state.applePosition} />
