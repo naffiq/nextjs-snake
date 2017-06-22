@@ -67,7 +67,6 @@ class App extends React.Component {
             direction: '',
             directionCode: 0
         })
-        console.log(this.state)
     }
 
     handleKeyPress(evt){
@@ -117,7 +116,6 @@ class App extends React.Component {
                     snakeSize : this.state.snakeSize + resize,
                     snakePosition : resizeSnake(this.state.snakePosition)
                 })
-                // console.log(this.state)
             }
         }
     }
@@ -132,7 +130,6 @@ class App extends React.Component {
                         isDead: true,
                         deathPosition: [this.state.snakePosition[0], position]
                     })
-                    console.log(this.state, this.state.snakePosition[0], position)
                 }
             }
         })
